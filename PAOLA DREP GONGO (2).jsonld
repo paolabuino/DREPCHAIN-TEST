@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "PAOLA DREP GONGO 01",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://pbs.twimg.com/profile_banners/1920054988874842112/1746612084/1080x360",
+      "sha256": "8fac4fec9903ca4a9a99132e62c4cf6b9d0efbb3fce1490a82c91981357b4279"
+    },
+    "motivations": "I'M VERRY MOTIVATED TO REPRESENTE MY COMMUNUTY",
+    "objectives": "I WOULD LIKE TO CONTRIBUTE",
+    "paymentAddress": "addr_test1qzu2um6zcth33q28dqfuq5tzjehktse5a95hnd7puh9ep5vn8a90yh943jrv0zdg393tyvzxxjth5u6zzzd2erx2akpsvh48uk",
+    "qualifications": "I'M AN COMMUNUT BUILDER GIRL IN GOMA",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "MY FACEBOOK",
+        "uri": "https://www.facebook.com/profile.php?id=61552258335432"
+      },
+      {
+        "@type": "Identity",
+        "label": "MY X ACOUNT",
+        "uri": "https://x.com/Paolabwino?t=sEQUh2c4xBTfMuPvI9ELzw&s=09"
+      }
+    ]
+  }
+}
